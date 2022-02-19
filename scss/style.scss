@@ -1,0 +1,61 @@
+/*Prueba de mapeo*/
+
+@import "scss/bootstrap.scss";
+/*Reset*/
+@import "_reset";
+/*Transiciones*/
+@import "_transiciones";
+/*Keyframes*/
+@import "_keyframes";
+/*Responsive*/
+@import "_responsive";
+
+//Mapeo
+$logo: (
+    ancho: 10vh,
+    nombre: logo,
+    cantidad: 2,
+    duracion: 4s,
+);
+
+.logo{
+    height: map-get($logo, ancho);
+    animation-name: map-get($logo, nombre);
+    animation-iteration-count: map-get($logo, cantidad);
+    animation-duration: map-get($logo, duracion);
+};
+
+//Extend
+.titulo {
+    font-size: 3rem;
+    text-align: center;
+    margin-top: 1vh;
+}
+
+.tituloCuerpo{
+    @extend .titulo;
+    height: 4vh;
+    font-size: 2rem;
+}
+
+//Mixin
+@mixin menu ($color, $fondo) {
+    color: $color;
+    background-color: $fondo;
+}
+
+.menu1 {
+    @include menu(#d33a3a, #ffffff);
+}
+
+.menu2 {
+    @include menu(#dd6565, #d8d5d5);
+}
+
+.menu3 {
+    @include menu(#5f2929, #979696);
+}
+
+.menu4 {
+    @include menu(#d69696, #2e2e2e);
+}

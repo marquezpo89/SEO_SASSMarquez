@@ -1,0 +1,40 @@
+//Variables
+$colorLetra: #ffffff;
+$background: linear-gradient(200deg, #c2c2c2 35%, #ffffff 60%);
+
+/* Responsive TABLET */
+@media (min-width: 576px) and (max-width: 991px){
+    .nav-link{
+        color: $colorLetra;  //uso de variable
+    }
+    main {
+        background-image: $background; //uso de variable
+        .estadio {
+            height: auto;
+            width: auto;
+        }
+    }
+}
+
+
+/* Responsive Desktop */
+@media (min-width: 992px){
+    .nav-link{
+        color: rgb(216, 79, 79);
+    }
+    main {
+        background-image: $background; //uso de variable
+        .estadio {
+            height: auto;
+            width: auto;
+        }
+    }
+    .nav-item a:hover{
+        width: fit-content;
+        height: 55px;
+        border-radius: 25px;
+        color: $colorLetra; //uso de variable
+        border: #000000 solid 2px;
+        background-color: #000000;
+    }
+}

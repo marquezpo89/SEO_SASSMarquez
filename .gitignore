@@ -1,0 +1,20 @@
+# Lista de objetos a ignorar
+
+# Ignora archivos
+
+SEO.docx
+
+# Ignora grupos de archivos
+
+
+# Ignora carpetas
+
+node_modules
+
+# Ignora subcarpetas
+
+nombrecarpeta/nombrearchivo
+
+nombrecarpeta/subcarpeta
+
+
